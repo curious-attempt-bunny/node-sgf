@@ -4,8 +4,9 @@ SGF parsing for Go games
 
 # Usage
 
-    var node-sgf = require('node-sgf');
-    node-sgf(...);
+    var fs  = require('fs');
+    var sgf = require('node-sgf');
+    sgf(fs.readFileSync('game.sgf').toString());
 
 # Installation
 
