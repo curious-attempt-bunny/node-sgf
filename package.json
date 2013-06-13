@@ -1,0 +1,21 @@
+{
+  "name": "node-sgf",
+  "description": "SGF parsing for Go games",
+  "version": "0.0.1",
+  "repository": {
+    "url": "git://github.com/curious-attempt-bunny/node-sgf.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "tap test/*.js"
+  },
+  "dependencies": {
+    "jison": "~0.4.4"
+  },
+  "devDependencies": {
+    "tap": "~0.4.3",
+    "tape": "~1.0.2"
+  },
+  "author": "Merlyn Albery-Speyer <curious.attempt.bunny@gmail.com> (curiousattemptbunny.com)",
+  "license": "MIT"
+}
