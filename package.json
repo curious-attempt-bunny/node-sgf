@@ -1,8 +1,8 @@
 {
-  "name": "node-sgf",
+  "name": "sgf",
   "description": "SGF parsing for Go games",
   "keywords": ["sgf", "format", "go", "weiqi", "baduk", "parse", "parsing"],
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "url": "git://github.com/curious-attempt-bunny/node-sgf.git"
   },
