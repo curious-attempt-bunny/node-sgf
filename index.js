@@ -19,7 +19,7 @@ var grammar = {
     "block" :[[ "BLOCK_MARKER commands", "$$ = $2;"]],
     "commands" : [[ "command commands", "$2.unshift($1); $$ = $2" ], ["command", "$$ = [$1];"]],
     "command" : [[ "COMMAND arguments", "$$ = {command: $1, arguments: $2};" ]],
-    "arguments": [[ "ARGUMENT arguments", "$2.unshift($1); $$ = $2" ], ["ARGUMENT", "$$ = [$1.substring(1, $1.length-1)];"]]
+    "arguments": [[ "ARGUMENT arguments", "$2.unshift($1.substring(1, $1.length-1)); $$ = $2" ], ["ARGUMENT", "$$ = [$1.substring(1, $1.length-1)];"]]
   }
 };
 
